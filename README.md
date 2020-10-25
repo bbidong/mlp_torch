@@ -6,7 +6,7 @@
 
 <p align="center"><img src="fig/mlp结构.PNG" width="70%">
 
-如图所示，从 Yolo 检测到的 Robot box 中提取 (x, y, w, h), 其中 (x, y)选择为 box 下界中心点位置，是因为选择正中心会受到车体远近box大小问题影响，(x, y)为box的宽和高，通过MLP将图像坐标映射为实际坐标，这种方法依赖于yolo检测bounding box的精度。
+如图所示，从 Yolo 检测到的 Robot box 中提取 (x, y, w, h), 其中 $(x, y)$选择为 box 下界中心点位置，是因为选择正中心会受到车体远近box大小问题影响，$(w, h)$为box的宽和高，通过MLP将图像坐标映射为实际坐标，这种方法依赖于yolo检测bounding box的精度。
 
 ## 误差分析
 
